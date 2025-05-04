@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1d1d1d;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Header Section */
+h1 {
+    text-align: center;
+    color: #2a3d66;
+}
+
+/* Paragraph Spacing */
+p {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Table Styles (Unchanged) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #1a3c64;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Section Titles */
+h3 {
+    color: #2a3d66;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+h3 + p {
+    margin-top: 0;
+}
+
+/* Additional Style for Tables */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+table {
+    margin-bottom: 30px;
+}
+
+/* Text Emphasis */
+strong {
+    color: #1a3c64;
+}
+
+.hig{
+    color: #ce182e;
+    font-weight: bold;
+}

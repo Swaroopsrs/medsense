@@ -1,0 +1,70 @@
+.sub {
+  padding: 10px 20px; /* 10px top/bottom, 20px left/right */
+  margin: 10px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px navy;
+  align-items: center;
+}
+
+
+ .clr {
+  padding: 10px 20px; /* 10px top/bottom, 20px left/right */
+  margin: 10px;
+  background-color: lightcoral;
+   border-radius: 10px;
+   font-family: sans serif;
+   font-family: sans-serif;
+  text-shadow: 1px 1px navy;
+  align-items: center;
+}
+
+.fsls {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.age {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.mlps {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+
+.bg {
+  background: linear-gradient(to right, lightblue, red);
+}
+
+input {
+  border: 2px solid green;  /* Green border */
+  border-radius: 5px;
+  padding: 8px;
+  font-family: Arial, sans-serif; /* Added consistent font for inputs */
+  width: 100%; /* Make inputs responsive */
+  max-width: 300px; /* Limit input width */
+  margin: 10px auto; /* Center inputs */
+  display: block; /* Ensure inputs are block elements */
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: lightgray;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

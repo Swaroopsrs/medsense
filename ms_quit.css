@@ -1,0 +1,105 @@
+/* General Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Center Title Section */
+.center {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Navigation Links for Habits */
+.cmd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cmd a {
+  font-family: serif;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #3498db;
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cmd a:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Habit Section Styling */
+.habit {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.habit h3 {
+  font-size: 22px;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.habit p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.habit strong {
+  color: #333;
+}
+
+/* Video Section */
+.habit .ceneter, .habit .centeer, .habit .ceenter {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.habit img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.habit img:hover {
+  transform: scale(1.1);
+}
+
+/* Horizontal Rule Styling */
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, #27ae60, #3498db);
+  margin: 30px 0;
+  border-radius: 1px;
+}

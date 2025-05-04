@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jan Aushadhi Medicine Price Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input {
+      width: 78%;
+    }
+
+    button {
+      width: 20%;
+      margin-left: 2%;
+    }
+
+    .suggestions {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      width: 78%;
+      max-height: 150px;
+      overflow-y: auto;
+      z-index: 100;
+    }
+
+    .suggestions div {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .suggestions div:hover {
+      background-color: #eee;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Search Jan Aushadhi Medicine Prices</h1>
+<div style="position: relative;">
+  <input type="text" id="searchBox" placeholder="Type medicine name...">
+  <button id="searchBtn">Search</button>
+  <div class="suggestions" id="suggestions"></div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Medicine Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody id="results"></tbody>
+</table>
+
+<script>
+  let medicines = [];
+
+  fetch('file.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to load JSON');
+      return response.json();
+    })
+    .then(data => {
+      console.log("Medicines loaded:", data);  // Debug log
+      medicines = data;
+
+      const searchBox = document.getElementById('searchBox');
+      const searchBtn = document.getElementById('searchBtn');
+      const suggestions = document.getElementById('suggestions');
+      const resultsTable = document.getElementById('results');
+
+      // Suggestion dropdown
+      searchBox.addEventListener('input', () => {
+        const query = searchBox.value.toLowerCase();
+        suggestions.innerHTML = '';
+        if (!query) return;
+
+        const matched = medicines.filter(m => m.name.toLowerCase().includes(query)).slice(0, 10);
+        matched.forEach(med => {
+          const div = document.createElement('div');
+          div.textContent = med.name;
+          div.onclick = () => {
+            searchBox.value = med.name;
+            suggestions.innerHTML = '';
+          };
+          suggestions.appendChild(div);
+        });
+      });
+
+      // Search function
+      function performSearch() {
+        const query = searchBox.value.toLowerCase();
+        const filtered = medicines.filter(m => m.name.toLowerCase().includes(query));
+        resultsTable.innerHTML = '';
+
+        if (filtered.length === 0) {
+          resultsTable.innerHTML = '<tr><td colspan="2">No medicines found.</td></tr>';
+          return;
+        }
+
+        filtered.forEach(med => {
+          const row = document.createElement('tr');
+          row.innerHTML = `<td>${med.name}</td><td>${med.price}</td>`;
+          resultsTable.appendChild(row);
+        });
+
+        suggestions.innerHTML = '';
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+    })
+    .catch(err => {
+      console.error('Error loading medicine data:', err);
+      document.getElementById('results').innerHTML = '<tr><td colspan="2">Failed to load data.</td></tr>';
+    });
+</script>
+
+</body>
+</html>

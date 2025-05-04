@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablet runout Calculator </title>
+  <link rel="stylesheet" href="stylesheet2.css">
+</head>
+<body class="bmiback">
+  <h2 class="bmihead">Tablet Runout Calculator</h2>
+  <br>
+  
+  <label for="total">enter total tablets you have : </label>
+  <input id="total" type="number"><br/><br/>
+  <br>
+
+  <label for="morning">morning quntity (1 or 1/2): </label>
+  <input id="morning" type="number"><br/><br/>
+  <br>
+  <label for="afternoon">afternoon quntity (1 or 1/2): </label>
+  <input id="afternoon" type="number"><br/><br/>
+  <br>
+  <label for="evening">evening (1 or 1/2): </label>
+  <input id="evening" type="number"><br/><br/>
+  <br>
+  <label for="night">night (1 or 1/2): </label>
+  <input id="night" type="number"><br/><br/>
+  <br>
+  
+  
+  <button class= "butcol" onclick="Calculatedays()">Submit</button>
+  <button class="butcol" onclick="reloadPage()">Clear</button><br/><br/>
+
+  <h4 id="heading"></h4>
+  <p id="output"></p>
+  <p id="message"></p>
+
+  <script src="tabletrunout.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+.bgi{
+  background-image: url("/storage/emulated/0/WEB_DEV/web-front-end/project_images/5e67bd8ca9bf0a8fe2f9427adf23be66_w200.gif");
+  background-size: cover;
+  width:350px;
+  height:500px;
+}
+
+.center {
+  color: white;
+  text-align: center;
+  font-family: monaco, monospace;
+  background: black;
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.tp1{
+   border-collapse: collapse;
+   padding-bottom: : 0px;
+   border-bottom: : 0px;
+   margin-bottom: : 0px;
+}
+
+.tp2{
+   border-collapse: collapse;
+   padding-top: 0px;
+   border-top: 0px;
+   margin-top: 0px;
+   color: aqua;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  font-family: serif;
+}
+
+.button {
+  display: block;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dropcontent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.subdropdown {
+  position: relative;
+}
+
+.submenubut {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+.subcontent {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: white;
+  min-width: 220px;
+  padding: 10px 0;
+  z-index: 2;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.subcontent {
+    margin-left: 20px;
+  }
+
+.subdropdown:hover .subcontent {
+  display: block;
+}
+
+.dropcontent a,
+.subcontent a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-family: serif;
+}
+
+.dropcontent a:hover,
+.subcontent a:hover {
+  background-color: #f0f0f0;
+  color: red;
+}
+
+/* Optional: Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .dropcontent, .subcontent {
+    position: static;
+    box-shadow: none;
+  }
+  
+.dropdown:hover .dropcontent {
+  display: block;
+}
+  
+.abc {
+  color: yellow;
+  text-justify: justify;
+}
+  
+.mail {
+  background-color: blanchedalmond;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-family: sans-serif;
+}
+
+  /* -+-+-+-+-+-+-+-+---+-+-+-+-+-+-+-*/  
+  
+#ft {
+  background-color: grey;
+  padding: 10px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* firstaids.html  */
+ /* Firstaid container */
+.firstaid {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap for responsiveness */
+  justify-content: center; /* Center the links horizontally */
+  gap: 15px; /* Add spacing between items */
+  max-width: 1200px; /* Limit the width for larger screens */
+  margin: 20px auto; /* Center the container and add spacing */
+  padding: 10px; /* Add padding around the container */
+  background-color: #f9f9f9; /* Optional background color */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Firstaid links */
+.firstaid a {
+  font-family: serif; /* Use serif font for a clean look */
+  color: black; /* Text color */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  background-color: burlywood; /* Background color for links */
+  display: block; /* Ensure block display for proper alignment */
+  width: 150px; /* Fixed width for links */
+  text-align: center; /* Center the text */
+  line-height: 1.5; /* Adjust line height for readability */
+  border-radius: 8px; /* Rounded corners for links */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  word-wrap: break-word; /* Handle long words */
+  overflow-wrap: break-word; /* Handle overflow */
+  white-space: normal; /* Allow text to wrap */
+  padding: 10px; /* Add padding inside links */
+  margin: 0; /* Remove extra margin */
+  border: 1px solid black; /* Add border for better visibility */
+}
+
+/* Hover effect for links */
+.firstaid a:hover {
+  background-color: lightgrey; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .firstaid {
+    gap: 10px; /* Reduce spacing between items */
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+
+  .firstaid a {
+    width: 120px; /* Reduce width for smaller screens */
+    font-size: 14px; /* Reduce font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .firstaid a {
+    width: 100%; /* Make links full-width on very small screens */
+    font-size: 12px; /* Further reduce font size */
+  }
+}
+
+.logo {
+  width:50px;
+  height:50px;
+}  
+
+.cnt img {
+  width: 1px;
+  height: 1px;
+}
+
+
+
+.c{
+  background-color: blue;
+}
+
+
+  
+
+.page1{
+  background-color: 
+}
+
+
+
+/* new cmd */
+  
+.cmd a {
+  font-family: serif;
+  color:black;
+  font-weight: bold;
+  box-shadow: black;
+  text-decoration: none;
+  background-color: burlywood;
+  width:120px;
+  height:auto;
+  text-align: center;
+  line-height: normal;
+  border-radius: 8px;
+  box-shadow: 2px,2px,6px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  word-wrap: break-word;
+overflow-wrap: break-word;
+white-space: normal;
+  padding:10px;
+  margin: 0px;
+  border: 0px;
+}
+  
+.cmd {
+  display: block;
+}
+  
+.cmct {
+  text-align: center;
+  text-decoration: underline;
+}  
+  
+ .Qh {
+   background-color: darkgray;
+   display: block;
+   width: 200px;
+   height: auto;
+ }
+
+ {
+  "window.zoomLevel": "1"
+}

@@ -1,0 +1,153 @@
+/* Background with GIF and fallback color */
+body.bgi {
+  background: url("project_images/5e67bd8ca9bf0a8fe2f9427adf23be66_w200.gif") no-repeat center center fixed;
+  background-size: 50%; /* Makes the background image smaller */
+  background-color: #000; /* Optional fallback color */
+  color: white;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  min-height: 100vh; /* Ensures the body covers the full viewport height */
+  
+}
+
+/* Center Title Section */
+.center {
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.tp1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.tp2 {
+  font-size: 24px;
+  margin: 0;
+  color: #ccc;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e68900;
+}
+
+.dropcontent {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  min-width: 250px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropcontent {
+  display: block;
+}
+
+.dropcontent > div {
+  padding: 10px 20px;
+}
+
+.dropcontent a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropcontent a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+/* Submenu for Diseases */
+.subdropdown {
+  position: relative;
+}
+
+.submenubut {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 4px;
+  margin: 5px 10px;
+  color: white;
+}
+
+.submenubut:hover {
+  background-color: #555;
+}
+
+.subcontent {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #222;
+  min-width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.subdropdown:hover .subcontent {
+  display: inline-block;
+}
+
+.subcontent a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.subcontent a:hover {
+  background-color: #444;
+}
+
+/* Content Section */
+.abc {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* Mail link styling */
+.mail a {
+  color: #ff9800;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mail a:hover {
+  color: #ffa726;
+}
+
+/**/
+

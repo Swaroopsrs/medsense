@@ -1,0 +1,83 @@
+/* Centered title */
+.center {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #1e3a5f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation menu with card-style links */
+.cmd {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 30px 20px;
+}
+
+.cmd a {
+  background-color: #ffffff;
+  border: 2px solid #3498db;
+  color: #2c3e50;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  transition: all 3s ease;
+  min-width: 200px;
+  text-align: center;
+}
+
+.cmd a:hover {
+  background-color: #3498db;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+/* Decorative line */
+.tline {
+  height: 2px;
+  background: linear-gradient(to right, #2980b9, #2ecc71);
+  border-radius: 1px;
+  margin: 30px auto;
+  width: 80%;
+}
+
+/* Disease section container */
+.disease {
+  background: #f9f9f9;
+  border-left: 8px solid #2ecc71;
+  margin: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cmct h2 {
+  font-size: 26px;
+  color: #27ae60;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ p {
+  font-size: 20px !important;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* YouTube Logo Button */
+.logo {
+  width: 60px;
+  margin-top: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.logo:hover {
+  transform: scale(1.15);
+  filter: brightness(6.1);
+}

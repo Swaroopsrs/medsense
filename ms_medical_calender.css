@@ -1,0 +1,13 @@
+.mc{
+  text-align: center;
+  display: block;
+  background-color: aqua;
+  padding: 11px;
+  margin:16px auto;
+  border-radius: 0px 0px 40px 40px;
+  box-shadow:
+  5px 0 10px rgba(0, 0, 0, 0.02),   
+  5px 0 10px rgba(0, 0, 0, 0.02),   
+  0 5px 10px rgba(0, 0, 0, 1000),   
+  0 5px 10px rgba(0, 0, 0, 0.02);
+}

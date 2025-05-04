@@ -1,0 +1,36 @@
+.bg {
+  background: linear-gradient(to right, lightblue, lightgreen);
+  padding: 30px;
+}
+
+.fsls {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+input {
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.but {
+  text-align: center;
+}
+
+.sub, .clr {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.sub {
+  background-color: lightgreen;
+}
+
+.clr {
+  background-color: lightcoral;
+}
+
